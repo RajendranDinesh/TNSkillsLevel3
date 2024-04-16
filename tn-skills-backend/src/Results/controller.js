@@ -52,7 +52,7 @@ const Question = require('../Survey/model');
 exports.getDashboardData = async (req, res) => {
   try {
     // Retrieve questions
-    const questions =w await Question.find().lean();
+    const questions = await Question.find().lean();
 
     // Retrieve results
     const results = await Result.find().lean();

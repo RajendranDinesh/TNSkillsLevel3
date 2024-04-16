@@ -78,3 +78,40 @@ Content-Type: application/json
 
 ###
 GET http://localhost:5000/results/results
+
+###
+POST http://localhost:5000/blog/blog/
+Content-Type: application/json
+
+[
+{
+    "title": "Blog 1",
+    "content": "This is the content of blog 1"
+},
+{
+    "title": "Blog 2",
+    "content": "This is the content of blog 2"
+},
+{
+    "title": "Blog 3",
+    "content": "This is the content of blog 3"
+}
+]
+
+###
+GET http://localhost:5000/blog/blog/
+
+###
+GET http://localhost:5000/blog/blog/661ec9c57bfae2b7c1b324d1
+
+###
+PUT http://localhost:5000/blog/blog/661ec9c57bfae2b7c1b324d3
+Content-Type: application/json
+
+{
+    "title": "Blog 3",
+    "content": "Tested the put command"
+}
+
+###
+DELETE http://localhost:5000/blog/blog/661ec9c57bfae2b7c1b324d1
