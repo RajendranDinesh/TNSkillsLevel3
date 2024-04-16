@@ -117,3 +117,9 @@
     text-decoration: none;
     color: #efefef;
 }
+
+.OptionsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

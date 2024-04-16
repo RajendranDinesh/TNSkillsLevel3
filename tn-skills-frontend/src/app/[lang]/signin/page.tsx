@@ -2,8 +2,8 @@ import Link from 'next/link'
 
 import styles from './styles/signin.module.css'
 
-import { Locale } from '../../../../i18n-config'
-import { getDictionary } from '../../../../get-dictionary'
+import { Locale } from '@/i18n-config'
+import { getDictionary } from '@/get-dictionary'
 
 interface SignInParams {
     params: {

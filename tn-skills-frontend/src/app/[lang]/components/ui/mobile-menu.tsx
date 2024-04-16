@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from 'react'
 
 import styles from './styles/mobile_menu.module.css'
+import ThemeSwitcher from '../atoms/theme-switcher'
+import LocaleSwitcher from '../atoms/locale-switcher'
 
 export default function MobileMenu() {
   const [mobileNavOpen, setMobileNavOpen] = useState<boolean>(false)
@@ -29,7 +31,7 @@ export default function MobileMenu() {
     return () => document.removeEventListener('keydown', keyHandler)
   })
 
-  
+
   return (
     <div className={styles.Container}>
       <button
@@ -46,7 +48,7 @@ export default function MobileMenu() {
           <rect y="18" width="24" height="2" rx="1"></rect>
         </svg>
       </button>
-      
+
       <nav
         id="mobile-nav"
         ref={mobileNav}
@@ -56,6 +58,10 @@ export default function MobileMenu() {
         <ul className={styles.MNavItems}>
           <li style={{ width: '100%' }}><a className={styles.MNavItem} href="/signup">Sign Up</a></li>
           <li style={{ width: '100%' }}><a className={styles.MNavItem} href="/signin">Sign In</a></li>
+          <div className={styles.OptionsContainer}>
+            <ThemeSwitcher />
+            <LocaleSwitcher />
+          </div>
         </ul>
       </nav>
 

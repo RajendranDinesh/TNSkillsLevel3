@@ -9,9 +9,16 @@
   "signin": {
     "email": "eMail Id",
     "password": "Password",
+    "conf_password": "Confirm password",
     "forgot": "Forgot Password",
     "sign_in": "Sign In",
     "no_account": "Don&apos;t have an account ?",
     "sign_up": "Sign Up"
+  },
+  "home": {
+    "heading": "Solar Energy World",
+    "tagLine": "Let Your Voice Illuminate Our Path: Take Our Solar Survey and Help Shape the Future of Renewable Energy!",
+    "surveyBtn": "Take our survey",
+    "learnMore": "Learn more"
   }
 }

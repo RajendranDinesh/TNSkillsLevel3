@@ -19,7 +19,7 @@
 }
 
 @media (max-width: 768px) {
-    .Heading{
+    .Heading {
         text-align: center;
     }
 }
@@ -33,6 +33,93 @@
     color: inherit;
 }
 
+.TagLineContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    .TagLine {
+        font-weight: 500;
+    }
+
+    .BtnContainer {
+        display: flex;
+        gap: 4rem;
+
+        .Survey {
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-width: 1px;
+            border-color: transparent;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 1.375;
+            padding-inline: 1rem;
+            padding-block: 0.5rem;
+            background-color: var(--accent);
+            color: var(--background);
+            width: 8rem;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+            transition-duration: 150ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .LearnMore {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            font-weight: 500;
+            color: var(--text);
+            background-color: var(--secondary);
+            width: 8rem;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+            transition-duration: 150ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        }
+
+        .Survey.Dark {
+            background-color: var(--dark-accent);
+            color: var(--dark-background);
+        }
+
+        .LearnMore.Dark {
+            color: var(--dark-text);
+            background-color: var(--dark-secondary);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .TagLineContainer {
+        padding-inline: 1rem;
+    }
+
+    .BtnContainer {
+        gap: 1rem !important;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+
+        .Survey {
+            width: 16rem !important;
+        }
+
+        .LearnMore {
+            width: 16rem !important;
+        }
+    }
+}
+
 .IntroVideoContainer {
     display: flex;
     justify-content: center;
@@ -42,4 +129,11 @@
 .IntroVideo {
     height: 80vh;
     width: 70%;
+}
+
+@media (max-width: 768px) {
+    .IntroVideo {
+        height: auto;
+        width: auto;
+    }
 }

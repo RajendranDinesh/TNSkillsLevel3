@@ -1,5 +1,5 @@
 "use client"
-import React, { createContext, useState, useContext } from 'react';
+import React, { createContext, useState, useContext, useEffect } from 'react';
 
 type Theme = 'light' | 'dark';
 
@@ -14,8 +14,15 @@ export const ThemeProvider = ({ children }: React.PropsWithChildren) => {
   const [theme, setTheme] = useState<Theme>('light');
 
   const toggleTheme = () => {
+    localStorage.setItem('theme', theme === 'light' ? 'dark' : 'light')
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
+
+  useEffect(() => {
+    const storedTheme = localStorage.getItem('theme');
+
+    if (storedTheme == 'light' || storedTheme == 'dark') setTheme(storedTheme ? storedTheme : 'light');
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>

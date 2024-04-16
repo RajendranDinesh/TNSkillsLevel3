@@ -3,10 +3,12 @@ import file from '@assets/logo.png'
 
 interface LogoParams {
     height?: number | `${number}`
+    className?: string
 }
 
 export default function Logo({
-    height = 50
+    height = 50,
+    className
 }: LogoParams) {
-    return <Image src={file} alt='logo' height={height} priority />
+    return <Image className={className} src={file} alt='logo' height={height} priority />
 }

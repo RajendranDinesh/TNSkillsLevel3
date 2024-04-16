@@ -19,7 +19,8 @@
     ],
     "paths": {
       "@/*": ["./*"],
-      "@assets/*": ["./public/*"]
+      "@assets/*": ["./public/*"],
+      "@networking/*": ["./networking/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

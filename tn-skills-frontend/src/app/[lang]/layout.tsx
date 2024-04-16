@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import { i18n, type Locale } from "@/i18n-config";
 import { ThemeProvider } from "@/src/context/Theme";
+import ToastProvider from "@/src/context/toast";
 
 import './styles/global.css'
 
@@ -25,7 +26,9 @@ export default function RootLayout({
     <html lang={params.lang}>
       <body style={{ margin: 0 }}>
         <ThemeProvider>
-          {children}
+          <ToastProvider>
+            {children}
+          </ToastProvider>
         </ThemeProvider>
       </body>
     </html>
