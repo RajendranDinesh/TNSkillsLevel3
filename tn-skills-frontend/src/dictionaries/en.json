@@ -1,0 +1,17 @@
+{
+  "server-component": {
+    "welcome": "Welcome"
+  },
+  "counter": {
+    "increment": "Increment",
+    "decrement": "Decrement"
+  },
+  "signin": {
+    "email": "eMail Id",
+    "password": "Password",
+    "forgot": "Forgot Password",
+    "sign_in": "Sign In",
+    "no_account": "Don&apos;t have an account ?",
+    "sign_up": "Sign Up"
+  }
+}

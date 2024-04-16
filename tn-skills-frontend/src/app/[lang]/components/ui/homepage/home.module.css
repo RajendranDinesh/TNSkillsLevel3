@@ -1,0 +1,45 @@
+.HomePage {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.HomePage.Dark {
+    background-color: var(--dark-background);
+    color: var(--dark-text);
+}
+
+.LogoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.HeadingContainer {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .Heading{
+        text-align: center;
+    }
+}
+
+.Heading {
+    font-size: 4rem;
+    font-weight: 800;
+
+    margin-top: 0;
+
+    color: inherit;
+}
+
+.IntroVideoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IntroVideo {
+    height: 80vh;
+    width: 70%;
+}

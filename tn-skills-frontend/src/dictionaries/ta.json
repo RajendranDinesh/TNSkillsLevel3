@@ -1,0 +1,17 @@
+{
+  "server-component": {
+    "welcome": "வணக்கம்"
+  },
+  "counter": {
+    "increment": "பெருக்கு",
+    "decrement": "குறை"
+  },
+  "signin": {
+    "email": "மின்னஞ்சல்",
+    "password": "கடவுச்சொல்",
+    "forgot": "கடவுச்சொல்லை மறந்துவிட்டேன்",
+    "sign_in": "உள்நுழைக",
+    "no_account": "உங்களிடம் கணக்கு இல்லையா ?",
+    "sign_up": "பதிவு செய்க"
+  }
+}
