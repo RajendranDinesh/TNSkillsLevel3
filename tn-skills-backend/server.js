@@ -8,7 +8,7 @@ const initDb = require('./config/initDb');
 const logger = new Logger();
 const PORT = process.env.PORT || 3000;
 
-// initDb();
+initDb();
 
 const server = http.createServer(app);
 

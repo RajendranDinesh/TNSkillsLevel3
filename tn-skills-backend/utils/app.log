@@ -1,0 +1,142 @@
+2024-04-16T20:45:11+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T20:45:11+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T20:52:49+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T20:52:49+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:03:54+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:03:54+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:03:58+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:03:58+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:04:04+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:04:04+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:04:23+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:04:23+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:05:27+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:05:27+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:05:36+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:05:36+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:05:43+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:05:43+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:05:47+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:05:47+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:05:51+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:05:51+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:06:00+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:06:00+05:30 [ERROR] [DB] Connection Failed MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+2024-04-16T21:37:13+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:37:13+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T21:37:21+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:37:21+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T21:37:25+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:37:25+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T21:39:34+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T21:39:34+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:00:05+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:00:05+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:01:21+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:01:21+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:02:18+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:02:18+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:02:22+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:02:22+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:02:26+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:02:26+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:03:19+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:03:19+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:04:38+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:04:38+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:15:22+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:15:22+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:15:40+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:15:40+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:18:25+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:18:25+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:18:27+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:18:27+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:19:40+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:19:40+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:19:42+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:19:42+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:20:39+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:20:39+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:21:38+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:21:38+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:21:39+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:21:39+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:21:41+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:21:41+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:22:52+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:22:52+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:22:53+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:22:53+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:31:15+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:31:15+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:32:09+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:32:09+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:32:19+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:32:19+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:32:21+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:32:21+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:44:09+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:44:09+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:45:25+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:45:25+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:46:17+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:46:17+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:46:37+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:46:37+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:46:39+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:46:39+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:46:43+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:46:43+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:49:57+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:49:57+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:51:01+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:51:01+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:51:03+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:51:03+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:51:58+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:51:58+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:52:00+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:52:00+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:52:03+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:52:03+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T22:57:32+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T22:57:32+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:00:01+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:00:01+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:03:44+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:03:44+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:07:58+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:07:58+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:08:02+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:08:02+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:08:06+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:08:06+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:10:27+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:10:27+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:10:31+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:10:31+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:25:37+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:25:37+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:26:09+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:26:09+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:26:10+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:26:10+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:28:19+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:28:19+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:28:21+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:28:21+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:28:48+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:28:48+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:28:51+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:28:51+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:28:53+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:28:53+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:28:57+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:28:57+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:33:25+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:33:25+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:36:40+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:36:40+05:30 [INFO] [DB] Connection Succeded
+2024-04-16T23:39:20+05:30 [INFO] [SERVER] Live at 5000
+2024-04-16T23:39:20+05:30 [INFO] [DB] Connection Succeded

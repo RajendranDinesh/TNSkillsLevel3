@@ -1,9 +1,19 @@
-const mongoose = require('mongoose');
+// models/question.js
 
-const SurveySchema = new mongoose.Schema({
-  // Define schema fields for survey
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
+
+const QuestionSchema = new Schema({
+  question: {
+    type: String,
+    required: true
+  },
+  options: {
+    type: [String],
+    required: true
+  }
 });
 
-const Survey = mongoose.model('surveys', SurveySchema);
+const Question = mongoose.model('Question', QuestionSchema);
 
-module.exports = Survey;
+module.exports = Question;

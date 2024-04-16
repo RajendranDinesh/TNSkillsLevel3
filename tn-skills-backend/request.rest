@@ -1,0 +1,80 @@
+GET http://localhost:5000/survey/questions
+
+###
+POST http://localhost:5000/survey/questions
+Content-Type: application/json
+
+[
+    {
+        "question": "What is the chemical symbol for water?",
+        "options": ["H2O", "CO2", "NaCl", "CH4"]
+    },
+    {
+        "question": "What is the capital of France?",
+        "options": ["Paris", "London", "Berlin", "Rome"]
+    },
+    {
+        "question": "Who is the author of 'Pride and Prejudice'?",
+        "options": ["Jane Austen", "Charles Dickens", "William Shakespeare", "Mark Twain"]
+    }
+]
+
+###
+DELETE http://localhost:5000/survey/questions/661eaa5d861bee16b4942992
+Content-Type: application/json
+
+{
+    "question": "What is the chemical symbol for water?",
+    "options": ["H2O", "CO2", "NaCl", "CH4"]
+}
+
+###
+POST http://localhost:5000/results/results
+Content-Type: application/json
+
+[
+  {
+    "userId": "user1",
+    "questionId": "661eb1fe3cd620fece01c860",
+    "selectedOption": 1
+  },
+  {
+    "userId": "user2",
+    "questionId": "661eb1fe3cd620fece01c860",
+    "selectedOption": 2
+  },
+  {
+    "userId": "user1",
+    "questionId": "661eb1fe3cd620fece01c862",
+    "userInput": "Paris"
+  },
+  {
+    "userId": "user2",
+    "questionId": "661eb1fe3cd620fece01c862",
+    "userInput": "London"
+  },
+  {
+    "userId": "user1",
+    "questionId": "661eb1fe3cd620fece01c864",
+    "selectedOption": 3
+  },
+  {
+    "userId": "user2",
+    "questionId": "661eb1fe3cd620fece01c864",
+    "userInput": "Mark Twain"
+  }
+]
+
+
+###
+PUT http://localhost:5000/results/results
+Content-Type: application/json
+
+{
+    "userId": "user1",
+    "questionId": "661eb1fe3cd620fece01c860",
+    "userInput": "CO2"
+}
+
+###
+GET http://localhost:5000/results/results
