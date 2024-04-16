@@ -5,8 +5,8 @@ interface urlCollection {
 }
 
 const IgressURLs: urlCollection = {
-    "dev": "http://127.0.0.1:5000/api/",
-    "prod": "https://igress.vercel.app/api/",
+    "dev": "http://127.0.0.1:5000/",
+    "prod": "https://igress.vercel.app/",
 }
 
 const BASE_URL = process.env.REACT_APP_ENV ? IgressURLs[process.env.REACT_APP_ENV] : IgressURLs["dev"];

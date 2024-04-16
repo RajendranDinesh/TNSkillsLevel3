@@ -21,15 +21,10 @@ export const ShowToast = (
     options: Partial<ToastOptions> = {},
 ): Id => {
 
-    const { theme } = useTheme();
-
-    const optionsToApply = { ...defaultToastOptions, ...options, theme: theme };
-
-    console.log("Ho")
+    const optionsToApply = { ...defaultToastOptions, ...options };
 
     switch (type) {
         case "success":
-            console.log(optionsToApply)
             return toast.success(content, optionsToApply);
         case "error":
             return toast.error(content, optionsToApply);

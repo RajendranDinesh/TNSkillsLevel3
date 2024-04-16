@@ -1,11 +1,13 @@
 "use client"
 
+import { BaseSyntheticEvent, useState } from 'react'
+import { HttpStatusCode } from 'axios'
+
 import { getDictionary } from '@/get-dictionary'
 import styles from '../styles/signup.module.css'
-import { useState } from 'react'
 import { Request } from '@/networking'
-import { HttpStatusCode } from 'axios'
 import { ShowToast } from '../../components/atoms/toast'
+import { useTheme } from '@/src/context/Theme'
 
 interface FormParams {
     dictionary: Awaited<ReturnType<typeof getDictionary>>["signin"];
@@ -22,18 +24,43 @@ export default function Form({
 
     const [userData, setUserData] = useState<SignUp>({emailId: '', password: ''});
 
-    const handleChange = (e: React.BaseSyntheticEvent) => {
+    const { theme } = useTheme();
+
+    const handleChange = (e: BaseSyntheticEvent) => {
         setUserData({...userData, [e.target.name]: e.target.value})
     }
 
-    const handleSubmit = async (e: React.BaseSyntheticEvent) => {
+    const redirect = ({userRole}: {userRole: string}) => {
+        switch (userRole) {
+            case "admin":
+                window.location.href = "/admin";
+                break;
+
+            case "user":
+                window.location.href = "/survey";
+                break;
+
+            default:
+                break;
+        }
+    }
+
+    const handleSubmit = async (e: BaseSyntheticEvent) => {
         e.preventDefault()
 
         try {
             const response = await Request('POST', '/user/signup', userData)
 
             if (response.status === HttpStatusCode.Created) {
-                ShowToast("success", <p>User created successfully</p>)
+
+                const { token, userRole } = response.data;
+    
+                localStorage.setItem("authToken", token);
+                localStorage.setItem("userRole", userRole);
+
+                ShowToast("success", <p>User created successfully</p>, {theme: theme});
+
+                redirect(userRole);
             }
 
         } catch (error) {
@@ -46,8 +73,8 @@ export default function Form({
 
             {/* email input */}
             <div className={styles.Input_group}>
-                <label htmlFor="emailId">{dictionary.email}</label>
-                <input onChange={handleChange} type="email" name="emailId" placeholder="prd@zohomail.in" required />
+                <label htmlFor="email">{dictionary.email}</label>
+                <input onChange={handleChange} type="email" name="email" placeholder="prd@zohomail.in" required />
             </div>
 
             {/* password input */}

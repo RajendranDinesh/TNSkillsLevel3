@@ -13,7 +13,7 @@ const createUserToken = (user, statusCode, res) => {
 
 exports.signup = async (req, res) => {
   try {
-    const user = new User({ ...req.body, role: 'employee' });
+    const user = new User({ ...req.body, role: 'user' });
     
     await user.save();
     createUserToken(user, 201, res);
