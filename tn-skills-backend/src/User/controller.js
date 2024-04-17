@@ -8,7 +8,7 @@ const createUserToken = (user, statusCode, res) => {
     expiresIn: process.env.JWT_EXPIRES_IN,
   });
 
-  res.status(statusCode).json({ token, userId: user._id, role: user.role });
+  res.status(statusCode).json({ token, userId: user._id, role: user.role, email: user.email });
 };
 
 exports.signup = async (req, res) => {

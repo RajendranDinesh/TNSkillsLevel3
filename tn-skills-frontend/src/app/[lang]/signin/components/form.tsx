@@ -4,33 +4,33 @@ import { BaseSyntheticEvent, useState } from 'react'
 import { HttpStatusCode } from 'axios'
 
 import { getDictionary } from '@/get-dictionary'
-import styles from '../styles/signup.module.css'
+import styles from '../styles/signin.module.css'
+import { useTheme } from '@/src/context/Theme'
 import { Request } from '@/networking'
 import { ShowToast } from '../../components/atoms/toast'
-import { useTheme } from '@/src/context/Theme'
 
 interface FormParams {
     dictionary: Awaited<ReturnType<typeof getDictionary>>["signin"];
 }
 
-interface SignUp {
-    email: string,
-    password: string
+interface SignIn {
+    email: string;
+    password: string;
 }
 
 export default function Form({
     dictionary
 }: FormParams) {
 
-    const [userData, setUserData] = useState<SignUp>({email: '', password: ''});
+    const [userData, setUserData] = useState<SignIn>({ email: '', password: '' });
 
     const { theme } = useTheme();
 
     const handleChange = (e: BaseSyntheticEvent) => {
-        setUserData({...userData, [e.target.name]: e.target.value})
+        setUserData({ ...userData, [e.target.name]: e.target.value })
     }
 
-    const redirect = ({userRole}: {userRole: string}) => {
+    const redirect = ({ userRole }: { userRole: string }) => {
         switch (userRole) {
             case "admin":
                 window.location.href = "/admin";
@@ -49,21 +49,23 @@ export default function Form({
         e.preventDefault()
 
         try {
-            const response = await Request('POST', '/user/signup', userData)
+            const response = await Request('POST', '/user/signin', userData)
 
-            if (response.status === HttpStatusCode.Created) {
+            if (response.status === HttpStatusCode.Ok) {
 
-                const { token, userRole } = response.data;
-    
+                const { token, role, email } = response.data;
+
                 localStorage.setItem("authToken", token);
-                localStorage.setItem("userRole", userRole);
+                localStorage.setItem("userRole", role);
+                localStorage.setItem("userEmail", email);
 
-                ShowToast("success", <p>User created successfully</p>, {theme: theme});
+                ShowToast("success", <p>Logged In successfully</p>, { theme: theme });
 
-                redirect(userRole);
+                redirect({userRole: role as string});
             }
 
         } catch (error) {
+            console.log(error)
             ShowToast("error", <p>Some error occured</p>)
         }
     }
@@ -83,12 +85,12 @@ export default function Form({
                 <input onChange={handleChange} type="password" name="password" required />
             </div>
 
-            <div className={styles.Input_group}>
-                <label htmlFor="conf_passcode">{dictionary.conf_password}</label>
-                <input type="password" name="conf_passcode" required />
+            {/* forgot password */}
+            <div className={styles.Forgot}>
+                <a>{dictionary.forgot} ?</a>
             </div>
 
-            <button className={styles.Sign}>{dictionary.sign_up}</button>
+            <button className={styles.Sign}>{dictionary.sign_in}</button>
         </form>
     )
 }
